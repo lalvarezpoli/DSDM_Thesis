@@ -1,0 +1,51 @@
+Title: Conceptual Metaphor Detection
+
+Description: Detect and extract conceptual Metaphors in a set of sentences.
+
+Task: Given a set of sentences, you are required to identify and extract conceptual metaphors present.  
+Only consider conceptual metaphors related to inflation, deflation, inflationary, disinflationary, hyperinflation, and disinflation.
+After identifying the metaphors, return the sentences that contain the metaphors and label it in the format:
+
+Sentence: [Sentence text] Category: [Category]
+
+Where, Category is one of the following 10 options (with a set of examples):
+Fire = ['ignite', 'fuel', 'spark', 'dampen', 'stoke', 'kindle', 'choke', 'stifle', 'fan', 'flare-up', 'douse', 'snuff']
+Liquids = ['erode', 'surge', 'subside', 'simmers', 'emergence', 'ebb', 'dilute', 'spurt', 'recede', 'buoy']
+Plant = ['hedge', 'nip']
+Animal = ['soar', 'rampant', 'curb', 'tame', 'rein', 'creep', 'whip', 'gallop', 'halt', 'roar', 'curtail', 'gnaw', 'hibernation','Pounce','Stalk','Bite','Claw','Snarl','Charge','Hunt','Intimidate','Defend','Rend','Tear','Dominated','Fangs','Claws','Predation','Territoriality','Hackles','Prowess','Strength','Ferocity','Dominance','Menace','Threat','piercing','glaring','Talons','Paws','Horns','Tusks','Fierce','Savage','Ruthless','Daunting','Wild','Untamed','Ferocious','prey']
+Disease = ['plague', 'worsen', 'benign', 'virulent', 'debilitate', 'bout', 'chronically']
+Warfare = ['threat', 'subdue', 'target', 'beat', 'preempt', 'vigilant', 'ravage', 'undermine', 'forestall', 'counteract', 'eliminate', 'ferocious', 'ruinous', 'clobber', 'buster', 'eradicate', 'besieged', 'thwart', 'bash', 'beset']
+Sports = ['pace', 'outstrip', 'lag', 'surpass', 'quicken', 'outrun', 'bout', 'best', 'tug-of-war', 'zip', 'overtake']
+Machine = ['accelerate', 'faster', 'control', 'slow', 'trigger', 'skyrocket', 'rapid', 'heat', 'escalate', 'decelerate', 'ratchet', 'unchecked', 'readjusted', 'chug', 'damper', 'zoom']
+Orientation = ['low', 'rise', 'high', 'increase', 'reduce', 'decline', 'fall', 'exceed', 'spiral', 'hyper', 'upward', 'uptick', 'downward', 'boost', 'peak', 'diminish', 'upturn', 'hike', 'plummet', 'upswing']
+Other = [any other metaphor not covered by the above categories]
+
+Definition: Conceptual metaphors refer to linguistic expressions that metaphorically represent abstract concepts in terms of more concrete concepts.
+
+Identifying Metaphorical and Non-Metaphorical Usage:
+To identify whether the use of "inflation" is metaphorical or non-metaphorical, consider the following questions:
+
+Is another domain being used to describe inflation?: Check if the sentence draws on concepts from a different area of experience to explain or depict inflation.
+Metaphorical: "Inflation is eroding our savings." (Here, "eroding" draws on the domain of natural wear and tear, often associated with physical erosion.)
+Non-Metaphorical: "Inflation is measured by the Consumer Price Index." (This is a straightforward, literal description.)
+
+Is the language used more concrete and vivid?: Metaphors often use vivid and concrete imagery to make abstract ideas more relatable.
+Metaphorical: "Inflation is a beast that must be tamed." (The use of "beast" provides a vivid and concrete image.)
+Non-Metaphorical: "Inflation affects the purchasing power of money." (This is a direct explanation without vivid imagery.)
+
+Is the purpose to simplify and relate?: Metaphors are often used to simplify complex ideas and relate them to common experiences.
+Metaphorical: "The economy is overheating due to inflation." (This uses the concept of overheating, which is a familiar experience, to explain economic stress.)
+Non-Metaphorical: "High inflation rates can lead to increased interest rates." (This is a factual statement explaining a cause-and-effect relationship.)
+
+Additional Instructions:
+- If one sentence contains multiple metaphors, return the sentence multiple times with each metaphor labeled separately.
+
+Example Input:
+["China worries that such rapid growth could ignite inflation, and the countrys banking industry has been trying since last year to bring the rate down to 7 percent a year.",
+"But the evidence from that earlier period is tainted by the fact that inflation was roaring at the time creating bracket creep, over-taxation of illusory capital gains and paper profits, and rising interest rates."]
+
+Example Output:
+"Sentence: China worries that such rapid growth could ignite inflation, and the countrys banking industry has been trying since last year to bring the rate down to 7 percent a year. Category: Fire", 
+"Sentence: "But the evidence from that earlier period is tainted by the fact that inflation was roaring at the time creating bracket creep, over-taxation of illusory capital gains and paper profits, and rising interest rates." Category: Animal"
+
+The output has to be in the right format as shown in the example output. The categories are predefined and you have to choose the right category based on the metaphor used in the sentence.

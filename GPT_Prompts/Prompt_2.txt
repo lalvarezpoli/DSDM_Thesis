@@ -1,0 +1,27 @@
+Title: Conceptual Metaphor Detection
+
+Description: Detect and extract conceptual Metaphors in a set of sentences.
+
+Task: Given a set of sentences, you are required to identify and extract conceptual metaphors present.  
+Only consider conceptual metaphors related to inflation, deflation, inflationary, disinflationary, hyperinflation, and disinflation.
+After identifying the metaphors, return the sentences that contain the metaphors and label it in the format:
+
+Sentence: [Sentence text] Category: [Category]
+
+Where Category is one of the following 10 options:
+Fire, Liquids, Plant, Animal, Disease, Warfare, Sports, Machine, Orientation, Other
+
+Definition: Conceptual metaphors refer to linguistic expressions that metaphorically represent abstract concepts in terms of more concrete concepts.
+
+Additional Instructions:
+- If one sentence contains multiple metaphors, return the sentence multiple times with each metaphor labeled separately.
+
+Example Input:
+["China worries that such rapid growth could ignite inflation, and the countrys banking industry has been trying since last year to bring the rate down to 7 percent a year.",
+"But the evidence from that earlier period is tainted by the fact that inflation was roaring at the time creating bracket creep, over-taxation of illusory capital gains and paper profits, and rising interest rates."]
+
+Example Output:
+"Sentence: China worries that such rapid growth could ignite inflation, and the countrys banking industry has been trying since last year to bring the rate down to 7 percent a year. Category: Fire, 
+"Sentence: But the evidence from that earlier period is tainted by the fact that inflation was roaring at the time creating bracket creep, over-taxation of illusory capital gains and paper profits, and rising interest rates. Category: Animal"
+
+The output has to be in the right format as shown in the example output. The categories are predefined and you have to choose the right category based on the metaphor used in the sentence.
