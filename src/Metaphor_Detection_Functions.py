@@ -81,7 +81,20 @@ def tokenize(text, modulation):
 
     return processed_text
 
-def tokenize_word_list(word_list, modulation):
+def find_metaphors_in_relationships(relationships, as_words, mod=0):
+    metaphors = []
+
+    for relationship in relationships:
+        # Tokenize the relationship
+        relationship = list(relationship)
+        relationship = tokenize_word_list(relationship, mod)
+        # Check if any word in the tuple is in the as_words list
+        if any(word in as_words for word in relationship):
+            metaphors.append(relationship)
+
+    return metaphors
+
+def tokenize_word_list(word_list, modulation=0):
     processed_words = []
 
     for word in word_list:
@@ -282,16 +295,6 @@ def remove_duplicates(sentence):
     # Join the unique words back into a string
     result = ' '.join(unique_words)
     return result
-
-def find_metaphors_in_relationships(relationships, as_words):
-    metaphors = []
-
-    for relationship in relationships:
-        # Check if any word in the tuple is in the as_words list
-        if any(word in as_words for word in relationship):
-            metaphors.append(relationship)
-
-    return metaphors
 
 def preprocess_text_regex(df, mod):
         text_preproc = (
