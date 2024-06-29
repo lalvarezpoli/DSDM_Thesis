@@ -159,9 +159,10 @@ def regex_matcher_word_order(text, as_words, words_to_match):
                     # Check if any word from as_words appears within the search range
                     if any(words[idx] in as_words for idx in search_indices):
                         selected_sentences.append(sentence)
+                        word = [word for word in words_to_match if word in sentence_lower]
                         break  # Break out of loop after finding the first match
 
-    return selected_sentences
+    return selected_sentences, word
 
 def vectorize(tokens, vocab):
     vector=[]
