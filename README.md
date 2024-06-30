@@ -10,7 +10,15 @@
 This repository contains the code and data for the thesis project: "Identifying Inflation Metaphors from ECB Communications." The goal of this project is to systematically identify and categorize conceptual metaphors related to inflation in ECB board member communications.
 
 ## Contributors
+*BSE DSDM 2023-2024*  
+- **Luis F. Alvarez**  
+    Email: [alvarezpluisf@gmail.com](mailto:alvarezpluisf@gmail.com)
 
+- **Sebastien Boxho**  
+  Email: [sebastien.boxho@bse.eu](mailto:sebastien.boxho@bse.eu)
+
+- **Mathieu Breier**  
+  Email: [mathieu.breier@bse.eu](mailto:mathieu.breier@bse.eu)
 
 ## Table of Contents
 
