@@ -1,0 +1,36 @@
+.
+├── ChatGPT_Labelling.ipynb
+├── Data
+│   ├── ECB_InterestRates.csv
+│   ├── Final_Data.csv
+│   ├── Labeled_Data.csv
+│   ├── Prediction_Data.csv
+│   ├── Scraped_Data.csv
+│   └── Speakers_Info.csv
+├── ECB_scrapper.ipynb
+├── GPT_Output
+│   ├── gpt_answer_1.pkl
+│   ├── gpt_answer_2.pkl
+│   ├── gpt_answer_3.pkl
+│   ├── gpt_answer_all_1.pkl
+│   ├── gpt_answer_all_2.pkl
+│   └── gpt_answer_all_3.pkl
+├── GPT_Prompts
+│   ├── Prompt_1.txt
+│   ├── Prompt_2.txt
+│   └── Prompt_3.txt
+├── Metaphor_Extraction.ipynb
+├── Metaphors_Descriptive_Analysis.ipynb
+├── Metaphors_Identification_Analysis.ipynb
+├── README.md
+├── ReadmeExtras
+│   ├── bse_logo.png
+│   └── ecb_logo.png
+├── Speakers.ipynb
+├── src
+│   ├── Metaphor_Detection_Functions.py
+│   ├── Metaphor_Labelling_Functions.py
+│   └── Metrics.py
+└── tree.txt
+
+6 directories, 28 files
