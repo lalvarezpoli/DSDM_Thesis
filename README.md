@@ -28,6 +28,7 @@ This repository contains the code and data for the thesis project: "Identifying 
 ## Table of Contents
 
 - [Overview](#overview)
+- [Contributors](#contributors)
 - [Project Structure](#project-structure)
 - [Notebooks](#methodology)
   - [Data Collection](#data-collection)
