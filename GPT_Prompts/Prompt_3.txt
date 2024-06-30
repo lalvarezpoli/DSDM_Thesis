@@ -11,8 +11,6 @@ Sentence: [Sentence text] Category: [Category]
 Where Category is one of the following 10 options:
 Fire, Liquids, Plant, Animal, Disease, Warfare, Sports, Machine, Orientation, Other
 
-Definition: Conceptual metaphors refer to linguistic expressions that metaphorically represent abstract concepts in terms of more concrete concepts.
-
 Additional Instructions:
 - If one sentence contains multiple metaphors, return the sentence multiple times with each metaphor labeled separately.
 
