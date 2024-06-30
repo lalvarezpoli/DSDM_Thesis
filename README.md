@@ -1,9 +1,16 @@
-# Identifying Inflation Metaphors in ECB Communications
-# DSDM24 Thesis
+<div style="display: flex; justify-content: space-between;">
+    <img src="bse_logo.png" alt="BSE Logo" width="200"/>
+    <img src="ecb_logo.png" alt="ECB Logo" width="274"/>
+</div>
+
+# DSDM24 Thesis: Identifying Inflation Metaphors in ECB Communications
 
 ## Overview
 
 This repository contains the code and data for the thesis project: "Identifying Inflation Metaphors from ECB Communications." The goal of this project is to systematically identify and categorize conceptual metaphors related to inflation in ECB board member communications.
+
+## Contributors
+
 
 ## Table of Contents
 
