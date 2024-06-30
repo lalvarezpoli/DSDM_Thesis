@@ -30,13 +30,13 @@ This repository contains the code and data for the thesis project: "Identifying 
 - [Overview](#overview)
 - [Contributors](#contributors)
 - [Project Structure](#project-structure)
-- [Notebooks](#methodology)
-  - [Data Collection](#data-collection)
+- [Notebooks](#notebooks)
+  - [0)Scrapper](#0)
   - [Preprocessing](#preprocessing)
   - [Metaphor Detection](#metaphor-detection)
   - [Modeling](#modeling)
-- [Contributors](#contributors)
 
+    
 ## Project Structure
 ```bash
 .
