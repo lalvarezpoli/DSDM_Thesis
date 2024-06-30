@@ -31,10 +31,13 @@ This repository contains the code and data for the thesis project: "Identifying 
 - [Contributors](#contributors)
 - [Project Structure](#project-structure)
 - [Notebooks](#notebooks)
-  - [0)Scrapper](#0)
-  - [Preprocessing](#preprocessing)
-  - [Metaphor Detection](#metaphor-detection)
-  - [Modeling](#modeling)
+  - 0)Scrapper
+  - 1)Speakers
+  - 2)GPT API
+  - 3)Metaphors Identification
+  - 4)Results
+  - 5)Analysis
+- [Dependencies](#dependencies)
 
     
 ## Project Structure
