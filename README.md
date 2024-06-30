@@ -31,19 +31,24 @@ This repository contains the code and data for the thesis project: "Identifying 
 - [Contributors](#contributors)
 - [Project Structure](#project-structure)
 - [Notebooks](#notebooks)
-  - 0)Scrapper
-  - 1)Speakers
-  - 2)GPT API
-  - 3)Metaphors Identification
-  - 4)Results
-  - 5)Analysis
+  - 0) Scrapper
+  - 1) Speakers
+  - 2) GPT API
+  - 3) Metaphors Identification
+  - 4) Results
+  - 5) Analysis
 - [Dependencies](#dependencies)
 
     
 ## Project Structure
 ```bash
 .
-├── ChatGPT_Labelling.ipynb
+├── 00_ECB_scrapper.ipynb
+├── 01_Speakers.ipynb
+├── 02_ChatGPT_Labelling.ipynb
+├── 03_Metaphor_Extraction.ipynb
+├── 04_Metaphors_Identification_Analysis.ipynb
+├── 05_Metaphors_Descriptive_Analysis.ipynb
 ├── Data
 │   ├── ECB_InterestRates.csv
 │   ├── Final_Data.csv
@@ -51,7 +56,6 @@ This repository contains the code and data for the thesis project: "Identifying 
 │   ├── Prediction_Data.csv
 │   ├── Scraped_Data.csv
 │   └── Speakers_Info.csv
-├── ECB_scrapper.ipynb
 ├── GPT_Output
 │   ├── gpt_answer_1.pkl
 │   ├── gpt_answer_2.pkl
@@ -63,39 +67,33 @@ This repository contains the code and data for the thesis project: "Identifying 
 │   ├── Prompt_1.txt
 │   ├── Prompt_2.txt
 │   └── Prompt_3.txt
-├── Metaphor_Extraction.ipynb
-├── Metaphors_Descriptive_Analysis.ipynb
-├── Metaphors_Identification_Analysis.ipynb
 ├── README.md
 ├── ReadmeExtras
 │   ├── bse_logo.png
-│   └── ecb_logo.png
-├── Speakers.ipynb
-├── __pycache__
-│   └── aux_functions.cpython-310.pyc
+│   ├── ecb_logo.png
+│   └── tree.txt
 ├── src
 │   ├── Metaphor_Detection_Functions.py
 │   ├── Metaphor_Labelling_Functions.py
-│   ├── Metrics.py
-│   └── __pycache__
+│   └── Metrics.py
 └── tree.txt
 
-8 directories, 29 files
+6 directories, 29 files
 ```
 
 
 ## Notebooks
 
-### 0)Scrapper
+### 0) Scrapper
 This notebook serves as a pipeline to automate the process of opening the browser, navigating to ecb.europa.eu and scrapp the information of the interviews. Its second instance actually performes the scraping of the content from each interview individually, and separate the answers from the questions.
 
-### 1)Speakers
+### 1) Speakers
 We manually scraped the necessary information from the ECB website for 19 different board members who have been part of the executive board. 
 
-### 2)GPT API
+### 2) GPT API
 In this notebook the Chat GPT API will be used to identify and classify metaphors against manual labeled data. We will then compare the perfromance of GPT 4o. Since the perfromance is considered as good enough to our human labeled observations, we will use GPT to label the entire dataset consisting of over 500 interviews. This final labels will work as the benchmark for the models we implement.
 
-### 3)Metaphors Identification
+### 3) Metaphors Identification
 In this Notebook you can find all the methods used to identify and extract conceptual metaphors about inflation. We also put in place a pre-processing pipeline in order to work with text data. Our preprocessing pipeline includes:
 - Lowercasing all words
 - Removing special characters and numbers
@@ -111,7 +109,7 @@ We employ several approaches to detect metaphors:
 
 
 
-### 4)Results
+### 4) Results
 This notebook is meant to analyse the metaphors detected by the REGEX, Part of Speech, Neural Network and Large Language Model approaches. It will provide results from the modelling and an overall comparisson between all the models and the API results.
 
 The analysis will focus on:
@@ -119,7 +117,7 @@ The analysis will focus on:
 - Amount of Metaphors detected by each model
 - Sentiment analysis of the metaphors flagged
 
-### 5)Analysis
+### 5) Analysis
 This final notebook perfoms a more indepth analysis of the results, making use of the speakers information and the results obtained from the matephors classification into the categories.
 
 ## Dependencies
