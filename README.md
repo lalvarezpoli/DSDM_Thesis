@@ -5,7 +5,11 @@
 
 # Identifying Inflation Metaphors in ECB Communications
 
-## Overview
+## Abstract
+
+This study systematically identifies and categorizes conceptual metaphors related to inflation in ECB board member communications, following the methodology outlined by Chunyu Hu and Zhi Chen in their paper, \textit{"Inflation Metaphor in Contemporary American English"} \citep{hu2019inflation}. Analyzing a corpus of ECB communications from 2005 to 2024, we identify and classify inflation-related metaphors using regular expressions (REGEX), part-of-speech (POS) tagging, and neural network models. Our findings reveal a consistent use of inflation metaphors across ECB executive board members, with notable variations in frequency and type depending on the individual and the time period. We leveraged the GPT API \cite{OpenAIAPI} to consistently label and categorize these metaphors, enabling robust performance analysis on the models and contributing to the emerging field of research in AI-driven text analysis.
+
+## Repository Overview
 
 This repository contains the code and data for the thesis project: "Identifying Inflation Metaphors from ECB Communications." The goal of this project is to systematically identify and categorize conceptual metaphors related to inflation in ECB board member communications. The whole of the exercise was performed in python, partitioned in different jupyter notebooks and extra functions imported from python files.
 
