@@ -3,7 +3,7 @@
     <img src="ReadmeExtras/ecb_logo.png" alt="ECB Logo" width="274" align="right"/>
 </div>
 
-# DSDM24 Thesis: Identifying Inflation Metaphors in ECB Communications
+# Identifying Inflation Metaphors in ECB Communications
 
 ## Overview
 
