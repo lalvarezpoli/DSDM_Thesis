@@ -1,6 +1,6 @@
 <div style="display: flex; justify-content: space-between;">
     <img src="ReadmeExtras/bse_logo.png" alt="BSE Logo" width="200"/>
-    <img src="ReadmeExtras/ecb_logo.png" alt="ECB Logo" width="274"/>
+    <img src="ReadmeExtras/ecb_logo.png" alt="ECB Logo" width="274" align="right"/>
 </div>
 
 # DSDM24 Thesis: Identifying Inflation Metaphors in ECB Communications
