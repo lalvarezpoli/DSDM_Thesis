@@ -124,4 +124,4 @@ This final notebook perfoms a more indepth analysis of the results, making use o
 ```
 
 ## Dependencies
-A list of sufficient the libraries is posted in the 'requirements.py' file. 
+A list of sufficient the libraries is posted in the 'requirements.txt' file. 
