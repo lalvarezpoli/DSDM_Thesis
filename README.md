@@ -11,7 +11,7 @@ This study systematically identifies and categorizes conceptual metaphors relate
 
 ## Repository Overview
 
-This repository contains the code and data for the thesis project: "Identifying Inflation Metaphors from ECB Communications." The goal of this project is to systematically identify and categorize conceptual metaphors related to inflation in ECB board member communications. The whole of the exercise was performed in python, partitioned in different jupyter notebooks and extra functions imported from python files.
+This repository contains the code and data for the thesis project: "Identifying Inflation Metaphors from ECB Communications". The whole of the exercise was performed in python, partitioned in different jupyter notebooks and extra functions imported from python files.
 
 ## Contributors
 *BSE DSDM 2023-2024*  
